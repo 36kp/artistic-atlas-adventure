@@ -21,8 +21,8 @@ class MoviePosterGenerator:
 
         load_dotenv()
         self.OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-        self.modelName = "dall-e-3"
-        self.posterSize = "1024x1024"
+        self.modelName = "dall-e-3" #"dall-e-2" #
+        self.posterSize = "1024x1024" #"256x256" #
 
 
     def generate_poster(self, script):
