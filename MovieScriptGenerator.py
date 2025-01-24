@@ -23,7 +23,7 @@ class MovieScriptGenerator:
         self.modelName = "gemini-1.5-flash"
 
 
-    async def generate_script(self, image_path):
+    def generate_script(self, image_path):
         """
         Generates a movie script based on the given image.
 
@@ -62,7 +62,7 @@ class MovieScriptGenerator:
         except Exception as e:
             return str(e)
         
-        
+
     def prompt(self):
         return """
         You are a movie producer.  

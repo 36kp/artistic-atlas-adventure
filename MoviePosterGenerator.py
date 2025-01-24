@@ -25,7 +25,7 @@ class MoviePosterGenerator:
         self.posterSize = "1024x1024"
 
 
-    async def generate_poster(self, script):
+    def generate_poster(self, script):
         """
         Generates a movie poster using OpenAI's DALL·E model.
 
@@ -38,7 +38,7 @@ class MoviePosterGenerator:
         This method sends the prompt to OpenAI's image generation API and retrieves 
         the generated image URL. The poster is then downloaded.
         """
-        
+
         # Set API Key
         openai.api_key = self.OPENAI_API_KEY
 
@@ -53,9 +53,9 @@ class MoviePosterGenerator:
         image_url = dalle_response.data[0].url
         print("\nMovie Poster Generated! View it here:", image_url)
 
-        return await self.downloadThePoster(image_url)
+        return self.downloadThePoster(image_url)
 
-    async def downloadThePoster(self, image_url):
+    def downloadThePoster(self, image_url):
         """
         Downloads the generated movie poster from the given URL and saves it locally.
 
