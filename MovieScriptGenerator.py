@@ -8,6 +8,14 @@ from PIL import Image
 
 
 class MovieScriptGenerator:
+    """
+    A class to generate movie scripts based on image input using the Gemini AI model.
+
+    This class interacts with Google's Gemini AI to analyze an image and produce 
+    a movie synopsis. The script includes a director, three actors, and an estimated 
+    IMDb rating based on similar movies.
+    """
+
     def __init__(self):
         # Load environment variables
         load_dotenv()
@@ -53,6 +61,7 @@ class MovieScriptGenerator:
         
         except Exception as e:
             return str(e)
+        
         
     def prompt(self):
         return """
