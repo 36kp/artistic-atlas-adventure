@@ -170,4 +170,7 @@ cython_debug/
 # PyPI configuration file
 .pypirc
 .DS_Store
-.pkl
+/movie_poster.png
+/temp_images
+/src/movie_poster.png
+*.pkl
