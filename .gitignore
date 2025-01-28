@@ -173,3 +173,4 @@ cython_debug/
 /movie_poster.png
 /temp_images
 /src/movie_poster.png
+.pkl
