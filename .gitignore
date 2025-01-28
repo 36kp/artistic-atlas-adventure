@@ -172,3 +172,4 @@ cython_debug/
 .DS_Store
 /movie_poster.png
 /temp_images
+/src/movie_poster.png
