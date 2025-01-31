@@ -178,3 +178,4 @@ src/temp_images
 *.keras
 *.h5
 .gradio
+/src/analysis/keras_tuner_results/
