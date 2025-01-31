@@ -174,7 +174,7 @@ cython_debug/
 /src/*.png
 *.pkl
 *.json
-src/temp_images/*
+src/temp_images
 *.keras
 *.h5
 .gradio
