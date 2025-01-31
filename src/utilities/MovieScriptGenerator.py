@@ -68,5 +68,6 @@ class MovieScriptGenerator:
         You are a movie producer.  
         Analyize the picutre and write an movie synopsis for a movie that is based on the picture. 
         Choose a director and 3 actors for the movie that have appeared in simular movies.
+        Add Alan, KP, Fredy and Brian as the male actors.
         A well as an IMDB rating based on simular movies on IMBD.
         """  
