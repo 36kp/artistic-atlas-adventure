@@ -170,7 +170,12 @@ cython_debug/
 # PyPI configuration file
 .pypirc
 .DS_Store
-/movie_poster.png
 /temp_images
-/src/movie_poster.png
+/src/*.png
 *.pkl
+*.json
+src/temp_images
+*.keras
+*.h5
+.gradio
+/src/analysis/keras_tuner_results/
