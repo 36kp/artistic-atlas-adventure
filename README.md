@@ -10,13 +10,28 @@ Welcome to the Artistic Atlas Adventure project! This project aims to create an 
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#license)
-- [Contact](#contact)
 - [External Sources and Citations](#external-sources-and-citations)
-- [API Key](#api-key)
 
 ## Introduction
 
 The Artistic Atlas Adventure is an open-source project designed to provide users with an immersive experience exploring artistic and cultural landmarks. Whether you're an art enthusiast, a traveler, or just curious about the world's artistic heritage, this project is for you.
+
+### Goal
+- ✅ Perform EDA on publicly available image data
+- ✅ Data clean-up and pickling
+- ✅ Train a Convolutional Neural Network to classify images
+- ✅ Use image class information to generate a prompt for GPT
+
+#### Image Classification using CNN
+
+1. Initial CNN Model
+
+    ![Initial Model](docs/img/Initial%20Model.png)
+
+2. Hyoertuned Model using Random Search
+
+    ![Tuned Model](docs/img/Trained%20Model.png)
+
 
 ## Prerequisites
 
@@ -34,6 +49,11 @@ This project uses OpenAI API to generate images, you need to set up your `OPENAI
 ## Installation
 
 To get started with the Artistic Atlas Adventure, follow these steps:
+
+0. Installing Dependencies
+    ```bash
+    pip install -r requirements.txt
+    ```
 
 1. Clone the repository:
     ```bash
@@ -79,33 +99,10 @@ We welcome contributions from the community! If you'd like to contribute, please
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
-## Contact
-
-If you have any questions or suggestions, feel free to reach out to the project maintainers at [your-email@example.com].
-
 ## External Sources and Citations
 
 This project utilizes data and images from various external sources. Proper attribution is given to the original authors and creators. Below is a list of sources and citations:
 
-- [Source Name 1](https://source1.example.com)
-- [Source Name 2](https://source2.example.com)
-- [Source Name 3](https://source3.example.com)
-
-
-
-## requirements.txt
-
-If you are using Python for any part of this project, you can list your dependencies in a `requirements.txt` file. Here is an example of what it might look like:
-
-```plaintext
-requests==2.25.1
-flask==1.1.2
-pandas==1.2.3
-```
-
-Make sure to install the dependencies using:
-```bash
-pip install -r requirements.txt
-```
+- Training images data source: [Intel Image Classification](https://www.kaggle.com/datasets/puneet6060/intel-image-classification)
 
 Enjoy your journey through the Artistic Atlas Adventure!
