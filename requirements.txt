@@ -8,3 +8,4 @@ keras==2.9.0
 Pillow==9.1.1
 pickle5==0.0.11
 keras-tuner==1.1.0
+gradio==3.1.4
